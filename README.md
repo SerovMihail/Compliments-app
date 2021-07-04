@@ -2,4 +2,14 @@
 
 The idea of this app to show you a random compliment based on your language
 
-The Second reason "Why?" is that I wanna practice Docker, NestJS and React for better fullstack experience
+# Why do I do this?
+
+The reason "Why?" is that I wanna practice Docker, NestJS and React for better fullstack experience
+
+# Roadmap
+
+- [x] Create two simple apps: ReactJS, NestJS
+- [x] Add CI/CD for backend on Heroku 
+- [ ] Add CI/CD for frontend on Heroku
+- [ ] Dockerize backend deploy or make all env for local development via one command
+- [ ] Make nice UI
