@@ -18,5 +18,5 @@
       "@app/todos": ["libs/todos/src/index.ts"]
     }
   },
-  "exclude": ["node_modules", "tmp"],
+  "exclude": ["node_modules", "tmp"]
 }
