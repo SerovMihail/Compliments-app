@@ -1,0 +1,47 @@
+{
+  "npmScope": "app",
+  "affected": {
+    "defaultBase": "master"
+  },
+  "implicitDependencies": {
+    "package.json": {
+      "dependencies": "*",
+      "devDependencies": "*"
+    },
+    ".eslintrc.json": "*"
+  },
+  "tasksRunnerOptions": {
+    "default": {
+      "runner": "@nrwl/nx-cloud",
+      "options": {
+        "cacheableOperations": ["build", "lint", "test", "e2e"],
+        "accessToken": "MWQzYTgyOTQtMWFhZC00ODBhLWFiMWEtNWJiNjFiODMzMzBjfHJlYWQtd3JpdGU=",
+        "canTrackAnalytics": false,
+        "showUsageWarnings": true
+      }
+    }
+  },
+  "targetDependencies": {
+    "build": [
+      {
+        "target": "build",
+        "projects": "dependencies"
+      }
+    ]
+  },
+  "projects": {
+    "back": {
+      "tags": []
+    },
+    "front": {
+      "tags": []
+    },
+    "front-e2e": {
+      "tags": [],
+      "implicitDependencies": ["front"]
+    },
+    "todos": {
+      "tags": []
+    }
+  }
+}
