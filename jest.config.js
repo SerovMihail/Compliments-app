@@ -1,7 +1,3 @@
 module.exports = {
-  projects: [
-    '<rootDir>/apps/front',
-    '<rootDir>/apps/back',
-    '<rootDir>/libs/todos',
-  ],
+  projects: [, '<rootDir>/apps/back', '<rootDir>/apps/front-nextjs'],
 };

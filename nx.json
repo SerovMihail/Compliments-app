@@ -33,15 +33,34 @@
     "back": {
       "tags": []
     },
-    "front": {
-      "tags": []
-    },
-    "front-e2e": {
-      "tags": [],
-      "implicitDependencies": ["front"]
-    },
-    "todos": {
+    "front-nextjs": {
       "tags": []
     }
-  }
+  },
+  "cli": {
+    "defaultCollection": "@nrwl/react"
+  },
+  "generators": {
+    "@nrwl/react": {
+      "application": {
+        "style": "styled-components",
+        "linter": "eslint",
+        "babel": true
+      },
+      "component": {
+        "style": "styled-components"
+      },
+      "library": {
+        "style": "styled-components",
+        "linter": "eslint"
+      }
+    },
+    "@nrwl/next": {
+      "application": {
+        "style": "styled-components",
+        "linter": "eslint"
+      }
+    }
+  },
+  "defaultProject": "front"
 }
