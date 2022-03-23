@@ -1,27 +1,25 @@
 import { AppProps } from 'next/app';
-import Head from 'next/head';
 import './styles.css';
-import { useState } from 'react';
+import { MainLayout } from '../components/MainLayout';
 
 export interface ListItem {
-  id: number
+  id: number;
 }
 
-function List({list}: { list: ListItem[] }): JSX.Element {
+function List({ list }: { list: ListItem[] }): JSX.Element {
   return (
     <ul>
       {list.map(listItem => <li key={listItem.id}>{listItem.id}</li>)}
     </ul>
-  )
+  );
 }
 
 function CustomApp({ Component, pageProps }: AppProps) {
 
   return (
-
-      <main >
-        <Component {...pageProps} />
-      </main>
+    <main>
+      <Component {...pageProps} />
+    </main>
   );
 }
 

@@ -43,13 +43,16 @@
     "regenerator-runtime": "0.13.7",
     "rxjs": "~6.6.3",
     "styled-components": "5.2.1",
-    "tslib": "^2.0.0"
+    "swr": "^1.2.2",
+    "tslib": "^2.0.0",
+    "@react-buddy/ide-toolbox": "^2.0.0"
   },
   "devDependencies": {
     "@babel/core": "7.12.13",
     "@babel/preset-env": "7.12.13",
     "@babel/preset-react": "7.12.13",
     "@babel/preset-typescript": "7.12.13",
+    "@faker-js/faker": "^6.0.0",
     "@nestjs/schematics": "^7.0.0",
     "@nestjs/testing": "^7.0.0",
     "@nrwl/cli": "12.5.4",

@@ -13,6 +13,9 @@ const rotate = keyframes`
   `;
 
 const SvgRounding = styled.div`
+  background-color: blue;
+  width: 20px;
+  height: 20px;
   animation: ${rotate} 2s linear infinite
 `;
 

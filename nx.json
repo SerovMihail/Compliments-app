@@ -35,6 +35,9 @@
     },
     "front-nextjs": {
       "tags": []
+    },
+    "interfaces": {
+      "tags": []
     }
   },
   "cli": {
