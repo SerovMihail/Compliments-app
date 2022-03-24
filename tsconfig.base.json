@@ -15,7 +15,8 @@
     "skipDefaultLibCheck": true,
     "baseUrl": ".",
     "paths": {
-      "@app/interfaces": ["libs/interfaces/src/*"]
+      "@app/interfaces": ["libs/interfaces/src/index.ts"],
+      "@front/shared": ["apps/front-nextjs/shared/index.ts"]
     }
   },
   "exclude": ["node_modules", "tmp"],

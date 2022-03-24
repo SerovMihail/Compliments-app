@@ -1,5 +1,5 @@
 import useSWR from 'swr';
-import { fetcher } from '@shared/fetcher';
+import { fetcher } from '../shared';
 
 
 export function Test() {

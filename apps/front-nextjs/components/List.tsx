@@ -1,7 +1,7 @@
+
 export interface ListProps {
   list: {id: number}[]
 }
-
 export const List = ({list}: ListProps) => {
   const getHref = (id: number) => `/post/${id}`;
 
