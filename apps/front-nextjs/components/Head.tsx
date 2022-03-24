@@ -3,7 +3,7 @@ import useSWR from 'swr';
 import { Loading } from './Loading';
 import { Profile } from './Profile';
 import { fetcher } from '@front/shared';
-
+import useSWRImmutable from 'swr/immutable';
 
 const HeaderWrapper = styled.nav`
   height: 80px;
@@ -14,7 +14,7 @@ const HeaderWrapper = styled.nav`
 `
 
 export function Head() {
-  const { data, error } = useSWR(`${process.env.NEXT_PUBLIC_ROOT_HOST}/api/profile`, fetcher, {});
+  const { data, error } = useSWRImmutable(`${process.env.NEXT_PUBLIC_ROOT_HOST}/api/profile`, fetcher);
 
   debugger;
 

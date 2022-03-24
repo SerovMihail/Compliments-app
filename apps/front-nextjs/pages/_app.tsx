@@ -1,25 +1,20 @@
 import { AppProps } from 'next/app';
 import './styles.css';
-import { MainLayout } from '../components/MainLayout';
+import React from 'react';
+import { ThemeContext } from '../contexts';
 
-export interface ListItem {
-  id: number;
-}
-
-function List({ list }: { list: ListItem[] }): JSX.Element {
-  return (
-    <ul>
-      {list.map(listItem => <li key={listItem.id}>{listItem.id}</li>)}
-    </ul>
-  );
-}
 
 function CustomApp({ Component, pageProps }: AppProps) {
 
   return (
     <main>
-      <Component {...pageProps} />
+      <ThemeContext.Provider value='light'>
+
+        <Component {...pageProps} />
+      </ThemeContext.Provider>
+
     </main>
+
   );
 }
 
