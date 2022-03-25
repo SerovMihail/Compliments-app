@@ -10,7 +10,7 @@ The reason "Why?" is that I wanna practice Docker, NestJS and React for better f
 
 - [x] Create two simple apps: ReactJS, NestJS
 - [x] Add CI/CD for backend on Heroku
-- [ ] Add monitoring system
+- [x] Add monitoring system
 - [ ] Add CI/CD for frontend on Heroku
 - [ ] Dockerize backend deploy or make all env for local development via one command
 - [ ] Make nice UI
