@@ -14,10 +14,16 @@
     "default": {
       "runner": "@nrwl/nx-cloud",
       "options": {
-        "cacheableOperations": ["build", "lint", "test", "e2e"],
+        "cacheableOperations": [
+          "build",
+          "lint",
+          "test",
+          "e2e"
+        ],
         "accessToken": "MWQzYTgyOTQtMWFhZC00ODBhLWFiMWEtNWJiNjFiODMzMzBjfHJlYWQtd3JpdGU=",
         "canTrackAnalytics": false,
-        "showUsageWarnings": true
+        "showUsageWarnings": true,
+        "parallel": 1
       }
     }
   },
@@ -28,17 +34,6 @@
         "projects": "dependencies"
       }
     ]
-  },
-  "projects": {
-    "back": {
-      "tags": []
-    },
-    "front-nextjs": {
-      "tags": []
-    },
-    "interfaces": {
-      "tags": []
-    }
   },
   "cli": {
     "defaultCollection": "@nrwl/react"

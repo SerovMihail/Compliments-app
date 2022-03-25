@@ -1,8 +1,3 @@
-module.exports = {
-  projects: [
-    ,
-    '<rootDir>/apps/back',
-    '<rootDir>/apps/front-nextjs',
-    '<rootDir>/libs/interfaces',
-  ],
-};
+const { getJestProjects } = require('@nrwl/jest');
+
+module.exports = { projects: getJestProjects() };
