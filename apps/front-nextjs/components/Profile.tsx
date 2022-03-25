@@ -1,7 +1,5 @@
 import styled from 'styled-components';
-import { ThemeContext } from '../contexts';
 import { ProfileDto } from '@app/interfaces';
-import { useContext } from 'react';
 
 const ProfileWrapper = styled.div`
   display: flex;
@@ -25,9 +23,6 @@ const Info = styled.div`
 `;
 
 export const Profile = ({ profile }: { profile: ProfileDto }) => {
-  const contextType = useContext(ThemeContext);
-
-  console.log(contextType);
 
   if (!profile) {
     return <>Loading</>;
