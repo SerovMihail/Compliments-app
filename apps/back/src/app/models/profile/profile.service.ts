@@ -2,7 +2,7 @@ import { Injectable } from '@nestjs/common';
 import { faker } from '@faker-js/faker';
 import { Observable, of } from 'rxjs';
 import { delay } from 'rxjs/operators';
-import { ProfileDto } from '../../../../../../libs/interfaces/src';
+import { ProfileDto } from '@app/interfaces';
 
 const dto: ProfileDto = {
   age: faker.datatype.number({ min: 18, max: 75 }),
