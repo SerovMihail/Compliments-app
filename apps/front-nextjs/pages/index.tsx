@@ -22,8 +22,6 @@ const Input = styled.input`
 const posts = [{ id: 1 }, { id: 2 }, { id: 3 }];
 
 export function Index() {
-
-
   const [count, setCount] = useState(0);
   const ref = useRef(0);
 
@@ -33,21 +31,17 @@ export function Index() {
 
   debugger;
 
-
   return (
     <MainLayout>
       <StyledPage>
         You are at home page
-
         <button onClick={() => setCount(count + 1)}>Button {count}</button>
-
-        <button onClick={() => ref.current = ref.current + 1}>Button {ref.current}</button>
-
+        <button onClick={() => (ref.current = ref.current + 1)}>
+          Button {ref.current}
+        </button>
         <List list={posts} />
-
       </StyledPage>
     </MainLayout>
-
   );
 }
 

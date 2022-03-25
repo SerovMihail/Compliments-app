@@ -11,22 +11,23 @@ const HeaderWrapper = styled.nav`
   background-color: darkgray;
   position: sticky;
   top: 0;
-`
+`;
 
 export function Head() {
-  const { data, error } = useSWRImmutable(`${process.env.NEXT_PUBLIC_ROOT_HOST}/api/profile`, fetcher);
+  const { data, error } = useSWRImmutable(
+    `${process.env.NEXT_PUBLIC_ROOT_HOST}/api/profile`,
+    fetcher
+  );
 
   debugger;
 
-  if (error) return <div>Failed to load</div>
-
+  if (error) return <div>Failed to load</div>;
 
   return (
     <HeaderWrapper>
       {!data && <Loading />}
 
-      {data && <Profile profile={data}/>}
-
+      {data && <Profile profile={data} />}
     </HeaderWrapper>
-  )
+  );
 }

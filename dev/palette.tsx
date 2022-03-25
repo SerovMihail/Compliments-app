@@ -3,18 +3,18 @@ import {
   Category,
   Component,
   Variant,
-  Palette
+  Palette,
 } from '@react-buddy/ide-toolbox';
 
 export const PaletteTree = () => (
   <Palette>
-    <Category name='HTML'>
-      <Component name='a'>
+    <Category name="HTML">
+      <Component name="a">
         <Variant requiredParams={['href']}>
           <a>Link</a>
         </Variant>
       </Component>
-      <Component name='button'>
+      <Component name="button">
         <Variant>
           <button>Button</button>
         </Variant>

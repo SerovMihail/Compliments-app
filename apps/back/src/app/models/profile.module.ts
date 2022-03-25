@@ -4,15 +4,8 @@ import { Module } from '@nestjs/common';
 
 @Module({
   imports: [],
-  providers: [
-    ProfileService
-  ],
-  exports: [
-    ProfileService
-  ],
-  controllers: [
-    ProfileController
-  ]
+  providers: [ProfileService],
+  exports: [ProfileService],
+  controllers: [ProfileController],
 })
-export class ProfileModule {
-}
+export class ProfileModule {}

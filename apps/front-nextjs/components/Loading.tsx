@@ -1,7 +1,5 @@
 import styled, { keyframes } from 'styled-components';
 
-
-
 const rotate = keyframes`
   from {
       transform: rotate(0deg);
@@ -18,7 +16,7 @@ const SvgRounding = styled.div`
   height: 80px;
 
   &:after {
-    content: " ";
+    content: ' ';
     display: block;
     width: 64px;
     height: 64px;

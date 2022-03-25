@@ -6,7 +6,7 @@ import Test from '../apps/front-nextjs/pages/test';
 const ComponentPreviews = () => {
   return (
     <Previews palette={<PaletteTree />}>
-      <ComponentPreview path='/Test'>
+      <ComponentPreview path="/Test">
         <Test />
       </ComponentPreview>
     </Previews>

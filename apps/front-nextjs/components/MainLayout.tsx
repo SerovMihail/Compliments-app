@@ -1,13 +1,11 @@
 import { Head } from './Head';
 import { ReactElement } from 'react';
 
-export function MainLayout({children}: { children: ReactElement }) {
+export function MainLayout({ children }: { children: ReactElement }) {
   return (
     <>
       <Head />
-      <main>
-        {children}
-      </main>
+      <main>{children}</main>
     </>
-  )
+  );
 }

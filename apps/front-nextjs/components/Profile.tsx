@@ -25,22 +25,17 @@ const Info = styled.div`
 `;
 
 export const Profile = ({ profile }: { profile: ProfileDto }) => {
-
   const contextType = useContext(ThemeContext);
 
   console.log(contextType);
 
   if (!profile) {
-    return (<>Loading</>);
+    return <>Loading</>;
   }
 
   return (
     <ProfileWrapper>
-      <Img
-        src={profile.avatarUrl}
-        width={64}
-        height={64}
-        placeholder='blur' />
+      <Img src={profile.avatarUrl} width={64} height={64} placeholder="blur" />
       <Info>
         {profile.firstname}
         {profile.lastname}
